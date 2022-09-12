@@ -1,0 +1,66 @@
+/* stylesheet */
+
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+div, button, img
+{
+    border: 1px solid red;
+}
+
+.a-hover {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+button
+{
+    cursor: pointer;
+    user-select: none;
+}
+
+.button-no
+{
+    color: inherit;
+    box-shadow: none;
+    background: none;
+	border: none;
+	outline: none;
+}
+
+#page-area
+{
+    max-width: 1080px;
+    margin: auto;
+    background-color: skyblue;
+    font-size: 1rem;
+}
+
+header
+{
+    background-color: #5e72e4;
+}
+
+header .user-profile
+{
+    width: 40px;
+}
+
+header .user-profile img
+{
+    border-radius: 50%;
+}
+
+.company-info .icon
+{
+    width: 80px;
+}
+
+.company-info .icon img
+{
+    width: 100%;
+    border-radius: 50%;
+}
