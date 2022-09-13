@@ -8,20 +8,27 @@ html(lang="en")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         title Document
         link(rel="stylesheet", href="./assets/css/style.css")
+        script(src="https://kit.fontawesome.com/1fc226965f.js" crossorigin="anonymous")
 
     body 
-        
-        #page-area
 
-            include ./header.pug
+        include ./header.pug
+
+        main 
 
             include ./company-info.pug
 
-            include ./action-cards.pug
+            .main-flex-container
 
-            include ./intro-video.pug
+                .main-flex-item-cards
 
-            include ./tabs-selection.pug
+                    include ./action-cards.pug
+
+                .main-flex-item-others
+
+                    include ./intro-video.pug
+
+                    include ./tabs-selection.pug
 
         script(src="./assets/js/script.js") 
     

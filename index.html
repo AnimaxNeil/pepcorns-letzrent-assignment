@@ -5,270 +5,321 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="https://kit.fontawesome.com/1fc226965f.js" crossorigin="anonymous"></script>
   </head>
   <body> 
-    <div id="page-area">
-      <header>
+    <header>
+      <div class="content">
         <div class="left">
           <button type="button">Dashboard</button>
           <button type="button">Login</button>
-          <button type="button">Website Home</button>
+          <button type="button">Return Home</button>
         </div>
-        <div class="right">
+        <div class="right"><span>Profile</span>
           <button class="user-profile button-no" type="button"><img src="./assets/img/user-profile-pic-holder.svg" alt="Profile"></button>
         </div>
-      </header>
+      </div>
+    </header>
+    <main> 
       <section class="company-info"> 
         <div class="info"> 
           <div class="icon"><img src="./assets/img/company-icon.png" alt="Letzrent icon"></div>
           <div class="description"> 
             <h1><a class="a-hover" href="https://app.pepcorns.com" target="_blank">Letzrent</a></h1>
             <p class="address">Address : Mumbai, Maharashtra, India</p>
-            <div class="contact"><span>Email : abc@de.fg</span><span>Website : https://letzrent.com</span><span>&nbsp;&nbsp;|&nbsp;&nbsp; </span><span>PAN/TAN : AAJCR3294F</span></div>
+            <div class="contact"><span>Email : abc@de.fg</span><span>&nbsp;&nbsp;|&nbsp;&nbsp;</span><span>Website : https://letzrent.com</span><span>&nbsp;&nbsp;|&nbsp;&nbsp; </span><span>PAN/TAN : AAJCR3294F</span></div>
             <p class="info">Online search, compare & booking platform for self-drive cars, charter flights, living space & more that rewards users</p>
           </div>
           <div class="actions">
-            <button class="button-no" type="button">Share </button>
-            <button class="button-no" type="button">Follow</button>
+            <button class="button-no" type="button"><i class="fa-solid fa-share"></i> Share </button>
+            <button class="button-no" type="button"><i class="fa-solid fa-user-plus"></i> Follow</button>
           </div>
         </div>
         <div class="tags"> <span>GEN Z FOUNDER</span><span>MOBILITY</span><span>E-COMMERCE</span></div>
       </section>
-      <section class="campaigns">
-        <div class="action-card campaign">
-          <div class="r1">
-            <p class="value">₹ 0</p>
-            <p class="info">0 % of minimum goal raised</p>
-            <hr>
-          </div>
-          <div class="r2">
-            <p class="value">0</p>
-            <p class="info">Total Investors</p>
-            <hr>
-          </div>
-          <div class="r3">
-            <p class="value">0 Days</p>
-            <p class="info">Left to Invest</p>
-            <hr>
-          </div>
-          <div class="r4">
-            <button type="button">Campaign expired</button>
-            <p class="info">₹ 1000 Minimum Investment</p>
-          </div>
+      <div class="main-flex-container">
+        <div class="main-flex-item-cards">
+          <section class="campaigns">
+            <div class="action-card campaign">
+              <div class="row r1">
+                <p class="value">₹ 0</p>
+                <p class="info">0 % of minimum goal raised</p>
+                <hr>
+              </div>
+              <div class="row r2">
+                <p class="value">0</p>
+                <p class="info">Total Investors</p>
+                <hr>
+              </div>
+              <div class="row r3">
+                <p class="value">0</p>
+                <p class="info">Days Left to Invest</p>
+                <hr>
+              </div>
+              <div class="row r4">
+                <button type="button"><i class="fa-solid fa-circle-dollar-to-slot"></i>&nbsp;&nbsp; Campaign Expired</button>
+                <p class="info">₹ 1000 Minimum Investment</p>
+              </div>
+            </div>
+          </section>
+          <section class="deals">
+            <h1>Deal Terms</h1>
+            <p class="info">Perks you will receive for Investing in Letzrent</p>
+                      <div class="action-card deal"> 
+                        <div class="row r1"> 
+                          <p class="value">₹ 2000</p>
+                          <p class="info">Bronze Tier</p>
+                        </div>
+                        <div class="row r2"> 
+                          <ul>
+                            <li>LetzRent Premium Apparel (T-shirts &amp; Coffee Mug)</li>
+                            <li>Early access to new features &amp; promotions</li>
+                            <li>TNC : Limited to the first 100</li>
+                          </ul>
+                        </div>
+                        <div class="row r3">
+                          <button type="button"><i class="fa-solid fa-money-bill-trend-up"></i>&nbsp;&nbsp; Invest</button>
+                        </div>
+                      </div>
+                      <div class="action-card deal"> 
+                        <div class="row r1"> 
+                          <p class="value">₹ 5000</p>
+                          <p class="info">Silver Tier</p>
+                        </div>
+                        <div class="row r2"> 
+                          <ul>
+                            <li>LetzRent Premium Apparel Box (T-shirts, Sweatshirts &amp; additional Swag)</li>
+                            <li>Early access to new features &amp; promotions</li>
+                            <li>TNC : Limited to the first 200</li>
+                          </ul>
+                        </div>
+                        <div class="row r3">
+                          <button type="button"><i class="fa-solid fa-money-bill-trend-up"></i>&nbsp;&nbsp; Invest</button>
+                        </div>
+                      </div>
+                      <div class="action-card deal"> 
+                        <div class="row r1"> 
+                          <p class="value">₹ 10000</p>
+                          <p class="info">Gold Tier</p>
+                        </div>
+                        <div class="row r2"> 
+                          <ul>
+                            <li>Exclusive interest in owning equity with an investment of ₹50,000 — ₹2,00,000</li>
+                            <li>Invite to exclusive LetzRent team chat</li>
+                            <li>LetzRent Premium Apparel Box (T-shirts, Sweatshirts &amp; additional Swag)</li>
+                            <li>Early access to new features &amp; promotions</li>
+                            <li>TNC: Equity benefits with no voting rights. Limited to the first 5 investors.</li>
+                          </ul>
+                        </div>
+                        <div class="row r3">
+                          <button type="button"><i class="fa-solid fa-money-bill-trend-up"></i>&nbsp;&nbsp; Invest</button>
+                        </div>
+                      </div>
+                      <div class="action-card deal"> 
+                        <div class="row r1"> 
+                          <p class="value">₹ 25000</p>
+                          <p class="info">Platinum Tier</p>
+                        </div>
+                        <div class="row r2"> 
+                          <ul>
+                            <li>Exclusive interest in owning equity with an investment of ₹3,00,000 — ₹10,00,000</li>
+                            <li>One-on-one 30 minute video call with Co-Founders</li>
+                            <li>Invite to exclusive LetzRent team chat</li>
+                            <li>LetzRent Premium Apparel Box (T-shirts, Sweatshirts &amp; additional Swag)</li>
+                            <li>Early access to new features &amp; promotions</li>
+                            <li>TNC : Equity benefits with no voting rights. Limited to the first 5 investors.</li>
+                          </ul>
+                        </div>
+                        <div class="row r3">
+                          <button type="button"><i class="fa-solid fa-money-bill-trend-up"></i>&nbsp;&nbsp; Invest</button>
+                        </div>
+                      </div>
+                      <div class="action-card deal"> 
+                        <div class="row r1"> 
+                          <p class="value">₹ 50000</p>
+                          <p class="info">Diamond Tier</p>
+                        </div>
+                        <div class="row r2"> 
+                          <ul>
+                            <li>Exclusive interest in owning equity with an investment of ₹11,00,000 — ₹30,00,000</li>
+                            <li>In-Person dinner with Co-Founder in Whitefield, Bangalore</li>
+                            <li>One-on-one 30 minute video call with Co-Founders</li>
+                            <li>Invite to exclusive LetzRent team chat</li>
+                            <li>LetzRent Premium Apparel Box (T-shirts, Sweatshirts &amp; additional Swag)</li>
+                            <li>Early access to new features &amp; promotions</li>
+                            <li>TNC : Equity benefits with voting rights. Limited to the first 5 investors.</li>
+                          </ul>
+                        </div>
+                        <div class="row r3">
+                          <button type="button"><i class="fa-solid fa-money-bill-trend-up"></i>&nbsp;&nbsp; Invest</button>
+                        </div>
+                      </div>
+                      <div class="action-card deal"> 
+                        <div class="row r1"> 
+                          <p class="value">₹ 100000</p>
+                          <p class="info">Vibranium Tier</p>
+                        </div>
+                        <div class="row r2"> 
+                          <ul>
+                            <li>Exclusive interest in owning equity with an investment of above ₹40,00,000</li>
+                            <li>LetzRent Weekend Experience: Flight &amp; Hotel on us</li>
+                            <li>In-Person dinner with Co-Founder in Whitefield, Bangalore</li>
+                            <li>One-on-one 30 minute video call with Co-Founders</li>
+                            <li>Invite to exclusive LetzRent team chat</li>
+                            <li>LetzRent Premium Apparel Box (T-shirts, Sweatshirts &amp; additional Swag)</li>
+                            <li>Early access to new features &amp; promotions</li>
+                            <li>TNC : Equity benefits with voting rights(open for discussion of term sheet). Limited to the first 2 investors.</li>
+                          </ul>
+                        </div>
+                        <div class="row r3">
+                          <button type="button"><i class="fa-solid fa-money-bill-trend-up"></i>&nbsp;&nbsp; Invest</button>
+                        </div>
+                      </div>
+          </section>
         </div>
-      </section>
-      <section class="deals">
-        <h1>Deal Terms</h1>
-        <p class="info">Perks you will receive for Investing Letzrent</p>
-              <div class="action-card deal"> 
-                <div class="r1"> 
-                  <p class="value">₹ 2000</p>
-                  <p class="info">Invest</p>
+        <div class="main-flex-item-others">
+          <section class="intro-video">
+            <div class="board">
+              <p class="help">Unable to view video ? <a href="https://www.youtube.com/watch?v=biGcDeB2PbQ">Click here</a></p>
+              <div class="video youtube"><iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/biGcDeB2PbQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+              <div class="actions"><a href="https://www.instagram.com/letzrent.official/" target="_blank"><i class="fa-solid fa-location-dot"></i> Mumbai, Maharashtra</a><a href="https://letzrent.com" target="_blank"><i class="fa-brands fa-chrome"></i> https://letzrent.com</a>
+                <div class="social"> <a class="youtube font-icon" href="https://www.youtube.com/watch?v=biGcDeB2PbQ" target="_blank"><i class="fa-brands fa-youtube"></i></a><a class="facebook font-icon" href="https://www.facebook.com/LetzRent.official/" target="_blank"><i class="fa-brands fa-square-facebook"></i></a><a class="instagram font-icon" href="https://www.youtube.com/watch?v=biGcDeB2PbQ" target="_blank"><i class="fa-brands fa-square-instagram"></i></a></div>
+              </div>
+            </div>
+          </section>
+          <section class="tabs-selection"> 
+            <button type="button" id="tab-pitch">Pitch</button>
+            <button type="button" id="tab-details">Details</button>
+            <button type="button" id="tab-updates">Updates</button>
+            <button type="button" id="tab-comments">Comments</button>
+          </section>
+          <section class="tab-content"> 
+            <div class="tab-content-unselected" id="tab-pitch-content">
+              <div class="row r1">
+                <div class="flex-items">
+                  <p class="name">Deck</p>
+                  <button type="button">Download Pitch Deck</button>
                 </div>
-                <div class="r2"> 
-                  <ul>
-                    <li>LetzRent Premium Apparel (T-shirts &amp; Coffee Mug)</li>
-                    <li>Early access to new features &amp; promotions</li>
-                    <li>TNC : Limited to the first 100</li>
-                  </ul>
+                <hr>
+              </div>
+              <div class="row r2"> 
+                <p class="name">10 Seconds Pitch</p>
+                <p class="info">Online search, compare & booking platform for self-drive cars, charter flights, living space & more that rewards users.</p>
+                <hr>
+              </div>
+              <div class="row r3"> 
+                <p class="name">Deck Info</p>
+                <p class="info">LetzRent</p>
+                <hr>
+              </div>
+              <div class="row r4"> 
+                <p class="name">Highlights</p>
+                <ul> 
+                  <li>Running profitable pilot in Bengaluru.</li>
+                  <li>20k+ registered users, 4.2 app rating and 10k+ social media following.</li>
+                  <li>Company is projecting 100cr+ transaction volume in 5 years.</li>
+                  <li>Founder with the marketing expertise of 17+ years in Reliance, Naaptol, Tv9 and Zee and more.</li>
+                  <li>GenZ CTO and co-founder.</li>
+                  <li>Expansion is easy and the untapped customer base is huge.</li>
+                  <li>Been in news articles, already making buzz.</li>
+                </ul>
+                <hr>
+              </div>
+              <div class="row r5"> 
+                <p class="name">Traction </p><img src="./assets/img/traction-img.png" alt="INR 60 Lakh+ Transaction volume">
+                <hr>
+              </div>
+              <div class="row r6"> 
+                <p class="name">Smart Way To Rent</p><img src="./assets/img/rent-cycle-img.png" alt="Rent Cycle">
+                <hr>
+              </div>
+              <div class="row r7"> 
+                <p class="name">Customers Want Low Prices</p>
+                <p class="info">To get low prices 85% of the consumers check at least 2 data points (Source: BCG Consumer Trends). In various sectors information centred buying has been made more efficient by companies like MMT for Travel, Policy bazaar for Insurance, Myntra or Shopperstop for Lifestyle products. However for rental products, there is no one & to fill this need and make the process efficient we launched LetzRent, hoping to have a first-mover advantage and dominate the market in the coming future.</p><img src="./assets/img/ratings-and-reviews.png" alt="User Reviews">
+                <hr>
+              </div>
+              <div class="row r8"> 
+                <p class="name">Single KYC</p>
+                <p class="info">Renting is a KYC dependent process, every time a customer books a service from a different service provider he/she will have to get a new KYC done. With Letzrent, the hassle of multiple KYC gets removed and with a single KYC, customers can rent from multiple brands.</p>
+                <hr>
+              </div>
+              <div class="row r9"> 
+                <p class="name">Vast Selection</p>
+                <p class="info">Being an aggregator Letzrent offers more options than category leaders.</p><img src="./assets/img/selection-mobile-views.png" alt="Mobile app view">
+                <hr>
+              </div>
+              <div class="row r10"> 
+                <p class="name">Why Renting?</p>
+                <ol> 
+                  <li>Demographic Twist: Commitment phobic millennials prefer an asset lite life with a bias toward renting rather than buying.</li>
+                  <li>Flexibility: Renting allows people to upgrade or change assets easily.</li>
+                  <li>Convenience: With the rental customers dispense with the headache of down payment, maintenance, insurance etc.</li>
+                </ol><img src="./assets/img/most-prefered-renting.png" alt="Maruti is the most prefered car for renting">
+                <hr>
+              </div>
+              <div class="row r11"> 
+                <p class="name">Feedback: People Love Us</p><img src="./assets/img/feedback-reviews.png" alt="">
+                <hr>
+              </div>
+              <div class="row r12"> 
+                <p class="name">Future and growth</p><img src="./assets/img/predicted-growth.png" alt="">
+                <hr>
+              </div>
+              <div class="row r13"> 
+                <p class="name">Core Team</p><img src="./assets/img/founders-table.png" alt="">
+                <hr>
+              </div>
+              <div class="row r14"> 
+                <p class="name">Documents for Investors</p>
+                <ul>
+                  <li><a href="http://drive.google.com/file/d/1clHQGD__nkbsA-cLz3A6_tABUuk5rl3w/view" target="_blank">Due Diligence Report</a></li>
+                  <li><a href="http://drive.google.com/file/d/1i02nUH-27EhiROtNlvXOfkPP7iTfwjpw/view?usp=sharing" target="_blank">Certificate of Incorporation</a></li>
+                </ul>
+              </div>
+            </div>
+            <div id="tab-details-content">
+              <p class="heading">Meet our strong and visionary team members</p>
+              <div class="members">
+                <div class="person-card member"><img src="./assets/img/cofounder1-pic.jpg" alt="Picture of Manish Pratik">
+                  <p class="name">Manish Pratik</p>
+                  <p class="info">Co-founder</p>
+                  <div class="social"> <a class="twitter font-icon" href="https://twitter.com/manishpratik" target="_blank"><i class="fa-brands fa-square-twitter"></i></a><a class="facebook font-icon" href="https://www.facebook.com/LetzRent.official/" target="_blank"><i class="fa-brands fa-square-facebook"></i></a><a class="linkedin font-icon" href="https://www.linkedin.com/in/manishpratik/" target="_blank"><i class="fa-brands fa-linkedin"></i></a></div>
                 </div>
-                <div class="r3">
-                  <button type="button">Invest</button>
+                <div class="person-card member"><img src="./assets/img/cofounder2-pic.jpg" alt="Picture of Gautam Menon">
+                  <p class="name">Gautam Menon</p>
+                  <p class="info">Co-founder</p>
+                  <div class="social"> <a class="twitter font-icon" href="https://twitter.com/manishpratik" target="_blank"><i class="fa-brands fa-square-twitter"></i></a><a class="facebook font-icon" href="https://www.facebook.com/LetzRent.official/" target="_blank"><i class="fa-brands fa-square-facebook"></i></a><a class="linkedin font-icon" href="https://www.linkedin.com/in/gautam-menon-040379208" target="_blank"><i class="fa-brands fa-linkedin"></i></a></div>
                 </div>
               </div>
-              <div class="action-card deal"> 
-                <div class="r1"> 
-                  <p class="value">₹ 5000</p>
-                  <p class="info">Invest</p>
+              <div class="sub-section funds">
+                <p>How will we use funds : Sales & Marketing - 50% | Human Resource-30% | Technology -10% | OPEX-10%</p>
+              </div>
+              <div class="sub-section dates">
+                <div class="date-card">
+                  <p class="name">Start Date <i class="fa-solid fa-circle-dot"></i></p>
+                  <p class="value">2022-06-26 16:38:05</p>
+                  <p class="info">Ends in &nbsp; <span class="green">0 Days</span></p>
                 </div>
-                <div class="r2"> 
-                  <ul>
-                    <li>LetzRent Premium Apparel Box (T-shirts, Sweatshirts &amp; additional Swag)</li>
-                    <li>Early access to new features &amp; promotions</li>
-                    <li>TNC : Limited to the first 200</li>
-                  </ul>
-                </div>
-                <div class="r3">
-                  <button type="button">Invest</button>
+                <div class="date-card">
+                  <p class="name">Target Raise <i class="fa-solid fa-bullseye"></i></p>
+                  <p class="value">₹ 5000000</p>
+                  <p class="info"><span class="green">0 %</span> &nbsp; Raised So far</p>
                 </div>
               </div>
-              <div class="action-card deal"> 
-                <div class="r1"> 
-                  <p class="value">₹ 10000</p>
-                  <p class="info">Invest</p>
-                </div>
-                <div class="r2"> 
-                  <ul>
-                    <li>Exclusive interest in owning equity with an investment of ₹50,000 — ₹2,00,000</li>
-                    <li>Invite to exclusive LetzRent team chat</li>
-                    <li>LetzRent Premium Apparel Box (T-shirts, Sweatshirts &amp; additional Swag)</li>
-                    <li>Early access to new features &amp; promotions</li>
-                    <li>TNC: Equity benefits with no voting rights. Limited to the first 5 investors.</li>
-                  </ul>
-                </div>
-                <div class="r3">
-                  <button type="button">Invest</button>
-                </div>
+              <div class="sub-section faq"> 
+                <p class="h">Frequently Asked Question</p>
+                <p class="q">What does your company do ?</p>
+                <p class="a">LetzRent is an online search, compare & booking platform for self-drive car rental that rewards users for renting. We aggregate rental deals from multiple service providers and present them to users with prices, reviews & facts to make an informed decision. Currently running a pilot in Bangalore by aggregating Zoomcar, Avis, Mychoize & Wowcarz.</p>
+                <p class="q">Where do you want to be in 5 years ?</p>
+                <p class="a">Uber for Self Drive Car Rental.</p>
+                <p class="q">Why did you choose this idea, what's your biggest Obstacle ?</p>
+                <p class="a">Customers want low Prices: And to get low prices 85% of the consumers check at least 2 data points (Source: BCG Consumer Trends). In various sectors information-centred buying has been made more efficient by companies like MMT for Travel, Policy bazaar for Insurance, Myntra or Shopperstop for Lifestyle products. However, for rental products, there is no one & to fill this need and make the process efficient we launched Letzrent, hoping to have a first-mover advantage and dominate the market in ten years.</p>
               </div>
-              <div class="action-card deal"> 
-                <div class="r1"> 
-                  <p class="value">₹ 25000</p>
-                  <p class="info">Invest</p>
-                </div>
-                <div class="r2"> 
-                  <ul>
-                    <li>Exclusive interest in owning equity with an investment of ₹3,00,000 — ₹10,00,000</li>
-                    <li>One-on-one 30 minute video call with Co-Founders</li>
-                    <li>Invite to exclusive LetzRent team chat</li>
-                    <li>LetzRent Premium Apparel Box (T-shirts, Sweatshirts &amp; additional Swag)</li>
-                    <li>Early access to new features &amp; promotions</li>
-                    <li>TNC : Equity benefits with no voting rights. Limited to the first 5 investors.</li>
-                  </ul>
-                </div>
-                <div class="r3">
-                  <button type="button">Invest</button>
-                </div>
-              </div>
-              <div class="action-card deal"> 
-                <div class="r1"> 
-                  <p class="value">₹ 50000</p>
-                  <p class="info">Invest</p>
-                </div>
-                <div class="r2"> 
-                  <ul>
-                    <li>Exclusive interest in owning equity with an investment of ₹11,00,000 — ₹30,00,000</li>
-                    <li>In-Person dinner with Co-Founder in Whitefield, Bangalore</li>
-                    <li>One-on-one 30 minute video call with Co-Founders</li>
-                    <li>Invite to exclusive LetzRent team chat</li>
-                    <li>LetzRent Premium Apparel Box (T-shirts, Sweatshirts &amp; additional Swag)</li>
-                    <li>Early access to new features &amp; promotions</li>
-                    <li>TNC : Equity benefits with voting rights. Limited to the first 5 investors.</li>
-                  </ul>
-                </div>
-                <div class="r3">
-                  <button type="button">Invest</button>
-                </div>
-              </div>
-              <div class="action-card deal"> 
-                <div class="r1"> 
-                  <p class="value">₹ 100000</p>
-                  <p class="info">Invest</p>
-                </div>
-                <div class="r2"> 
-                  <ul>
-                    <li>Exclusive interest in owning equity with an investment of above ₹40,00,000</li>
-                    <li>LetzRent Weekend Experience: Flight &amp; Hotel on us</li>
-                    <li>In-Person dinner with Co-Founder in Whitefield, Bangalore</li>
-                    <li>One-on-one 30 minute video call with Co-Founders</li>
-                    <li>Invite to exclusive LetzRent team chat</li>
-                    <li>LetzRent Premium Apparel Box (T-shirts, Sweatshirts &amp; additional Swag)</li>
-                    <li>Early access to new features &amp; promotions</li>
-                    <li>TNC : Equity benefits with voting rights(open for discussion of term sheet). Limited to the first 2 investors.</li>
-                  </ul>
-                </div>
-                <div class="r3">
-                  <button type="button">Invest</button>
-                </div>
-              </div>
-      </section>
-      <section class="intro-video">
-        <p class="help">Unable to view video ? <a href="https://www.youtube.com/watch?v=biGcDeB2PbQ">Click here</a></p>
-        <div class="video youtube"><img src="./assets/img/blank16by9.png" alt="Intro video"><iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/biGcDeB2PbQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-        <div class="actions"><a href="https://www.instagram.com/letzrent.official/" target="_blank">Mumbai,Maharashtra</a><a href="https://letzrent.com" target="_blank">https://letzrent.com</a>
-          <div class="social"> <a class="youtube font-icon" href="https://www.youtube.com/watch?v=biGcDeB2PbQ" target="_blank">Y</a><a class="facebook font-icon" href="https://www.facebook.com/LetzRent.official/" target="_blank">F</a><a class="instagram font-icon" href="https://www.youtube.com/watch?v=biGcDeB2PbQ" target="_blank">I</a></div>
+            </div>
+          </section>
         </div>
-      </section>
-      <section class="tabs-selection"> 
-        <button type="button">Pitch</button>
-        <button type="button">Details</button>
-        <button type="button">Updates</button>
-        <button type="button">Comments</button>
-      </section>
-      <section class="tab-content pitch">
-        <div class="content"> 
-          <div class="r1">
-            <p class="name">Deck</p>
-            <button type="button">Download Pitch Deck</button>
-            <hr>
-          </div>
-          <div class="r2"> 
-            <p class="name">10 Seconds Pitch</p>
-            <p class="info">Online search, compare & booking platform for self-drive cars, charter flights, living space & more that rewards users.</p>
-            <hr>
-          </div>
-          <div class="r3"> 
-            <p class="name">Deck Info</p>
-            <p class="info">LetzRent</p>
-            <hr>
-          </div>
-          <div class="r4"> 
-            <p class="name">Highlights</p>
-            <ul> 
-              <li>Running profitable pilot in Bengaluru.</li>
-              <li>20k+ registered users, 4.2 app rating and 10k+ social media following.</li>
-              <li>Company is projecting 100cr+ transaction volume in 5 years.</li>
-              <li>Founder with the marketing expertise of 17+ years in Reliance, Naaptol, Tv9 and Zee and more.</li>
-              <li>GenZ CTO and co-founder.</li>
-              <li>Expansion is easy and the untapped customer base is huge.</li>
-              <li>Been in news articles, already making buzz.</li>
-            </ul>
-            <hr>
-          </div>
-          <div class="r5"> 
-            <p class="name">Traction </p><img src="./assets/img/traction-img.png" alt="INR 60 Lakh+ Transaction volume">
-            <hr>
-          </div>
-          <div class="r6"> 
-            <p class="name">Smart Way To Rent</p><img src="./assets/img/rent-cycle-img.png" alt="Rent Cycle">
-            <hr>
-          </div>
-          <div class="r7"> 
-            <p class="name">Customers Want Low Prices</p>
-            <p class="info">To get low prices 85% of the consumers check at least 2 data points (Source: BCG Consumer Trends). In various sectors information centred buying has been made more efficient by companies like MMT for Travel, Policy bazaar for Insurance, Myntra or Shopperstop for Lifestyle products. However for rental products, there is no one & to fill this need and make the process efficient we launched LetzRent, hoping to have a first-mover advantage and dominate the market in the coming future.</p><img src="./assets/img/ratings-and-reviews.png" alt="User Reviews">
-            <hr>
-          </div>
-          <div class="r8"> 
-            <p class="name">Single KYC</p>
-            <p class="info">Renting is a KYC dependent process, every time a customer books a service from a different service provider he/she will have to get a new KYC done. With Letzrent, the hassle of multiple KYC gets removed and with a single KYC, customers can rent from multiple brands.</p>
-            <hr>
-          </div>
-          <div class="r9"> 
-            <p class="name">Vast Selection</p>
-            <p class="info">Being an aggregator Letzrent offers more options than category leaders.</p><img src="./assets/img/selection-mobile-views.png" alt="Mobile app view">
-            <hr>
-          </div>
-          <div class="r10"> 
-            <p class="name">Why Renting?</p>
-            <ol> 
-              <li>Demographic Twist: Commitment phobic millennials prefer an asset lite life with a bias toward renting rather than buying.</li>
-              <li>Flexibility: Renting allows people to upgrade or change assets easily.</li>
-              <li>Convenience: With the rental customers dispense with the headache of down payment, maintenance, insurance etc.</li>
-            </ol><img src="./assets/img/most-prefered-renting.png" alt="Maruti is the most prefered car for renting">
-            <hr>
-          </div>
-          <div class="r11"> 
-            <p class="name">Feedback: People Love Us</p><img src="./assets/img/feedback-ratings.png" alt="">
-            <hr>
-          </div>
-          <div class="r12"> 
-            <p class="name">Future and growth</p><img src="./assets/img/predicted-growth.png" alt="">
-            <hr>
-          </div>
-          <div class="r13"> 
-            <p class="name">Core Team</p><img src="./assets/img/founders-table.png" alt="">
-            <hr>
-          </div>
-          <div class="r14"> 
-            <p class="name">Documents for Investors</p>
-            <ul>
-              <li><a href="http://drive.google.com/file/d/1clHQGD__nkbsA-cLz3A6_tABUuk5rl3w/view" target="_blank">Due Diligence Report</a></li>
-              <li><a href="http://drive.google.com/file/d/1i02nUH-27EhiROtNlvXOfkPP7iTfwjpw/view?usp=sharing" target="_blank">Certificate of Incorporation</a></li>
-            </ul>
-            <hr>
-          </div>
-        </div>
-      </section>
-    </div>
+      </div>
+    </main>
     <script src="./assets/js/script.js"> </script>
   </body>
 </html>

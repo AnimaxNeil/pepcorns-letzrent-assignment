@@ -2,32 +2,33 @@
 
 section.tabs-selection 
 
-    button(type="button") Pitch
-    button(type="button") Details
-    button(type="button") Updates
-    button(type="button") Comments
+    button(type="button")#tab-pitch.tab-unselected Pitch
+    button(type="button")#tab-details.tab-unselected Details
+    button(type="button")#tab-updates.tab-unselected Updates
+    button(type="button")#tab-comments.tab-unselected Comments
 
 
-section.tab-content.pitch
+section.tab-content 
 
-    .content 
+    #tab-pitch-content.tab-content-unselected
 
-        .r1
-            p.name Deck
-            button(type="button") Download Pitch Deck
+        .row.r1
+            .flex-items
+                p.name Deck
+                button(type="button") Download Pitch Deck
             hr
 
-        .r2 
+        .row.r2 
             p.name 10 Seconds Pitch
             p.info Online search, compare & booking platform for self-drive cars, charter flights, living space & more that rewards users.
             hr
 
-        .r3 
+        .row.r3 
             p.name Deck Info
             p.info LetzRent
             hr
 
-        .r4 
+        .row.r4 
             p.name Highlights
             ul 
                 li Running profitable pilot in Bengaluru.
@@ -39,34 +40,34 @@ section.tab-content.pitch
                 li Been in news articles, already making buzz.
             hr
 
-        .r5 
+        .row.r5 
             p.name Traction 
             img(src="./assets/img/traction-img.png" alt="INR 60 Lakh+ Transaction volume")
             hr
 
-        .r6 
+        .row.r6 
             p.name Smart Way To Rent
             img(src="./assets/img/rent-cycle-img.png" alt="Rent Cycle")
             hr
 
-        .r7 
+        .row.r7 
             p.name Customers Want Low Prices
             p.info To get low prices 85% of the consumers check at least 2 data points (Source: BCG Consumer Trends). In various sectors information centred buying has been made more efficient by companies like MMT for Travel, Policy bazaar for Insurance, Myntra or Shopperstop for Lifestyle products. However for rental products, there is no one & to fill this need and make the process efficient we launched LetzRent, hoping to have a first-mover advantage and dominate the market in the coming future.
             img(src="./assets/img/ratings-and-reviews.png" alt="User Reviews")
             hr
         
-        .r8 
+        .row.r8 
             p.name Single KYC
             p.info Renting is a KYC dependent process, every time a customer books a service from a different service provider he/she will have to get a new KYC done. With Letzrent, the hassle of multiple KYC gets removed and with a single KYC, customers can rent from multiple brands.
             hr
 
-        .r9 
+        .row.r9 
             p.name Vast Selection
             p.info Being an aggregator Letzrent offers more options than category leaders.
             img(src="./assets/img/selection-mobile-views.png" alt="Mobile app view")
             hr
 
-        .r10 
+        .row.r10 
             p.name Why Renting?
             ol 
                 li Demographic Twist: Commitment phobic millennials prefer an asset lite life with a bias toward renting rather than buying.
@@ -75,25 +76,80 @@ section.tab-content.pitch
             img(src="./assets/img/most-prefered-renting.png" alt="Maruti is the most prefered car for renting")
             hr
 
-        .r11 
+        .row.r11 
             p.name Feedback: People Love Us
-            img(src="./assets/img/feedback-ratings.png" alt="")
+            img(src="./assets/img/feedback-reviews.png" alt="")
             hr
 
-        .r12 
+        .row.r12 
             p.name Future and growth
             img(src="./assets/img/predicted-growth.png" alt="")
             hr
 
-        .r13 
+        .row.r13 
             p.name Core Team
             img(src="./assets/img/founders-table.png" alt="")
             hr
 
-        .r14 
+        .row.r14 
             p.name Documents for Investors
             ul
                 li: a(href="http://drive.google.com/file/d/1clHQGD__nkbsA-cLz3A6_tABUuk5rl3w/view" target="_blank") Due Diligence Report
                 li: a(href="http://drive.google.com/file/d/1i02nUH-27EhiROtNlvXOfkPP7iTfwjpw/view?usp=sharing" target="_blank") Certificate of Incorporation
-            hr
+
+
+    #tab-details-content.tab-content-unselected
+
+        p.heading Meet our strong and visionary team members
+
+        .members
+
+            .person-card.member
+                img(src="./assets/img/cofounder1-pic.jpg" alt="Picture of Manish Pratik")
+                p.name Manish Pratik
+                p.info Co-founder
+                .social 
+                    a.twitter.font-icon(href="https://twitter.com/manishpratik" target="_blank") <i class="fa-brands fa-square-twitter"></i>
+                    a.facebook.font-icon(href="https://www.facebook.com/LetzRent.official/" target="_blank") <i class="fa-brands fa-square-facebook"></i>
+                    a.linkedin.font-icon(href="https://www.linkedin.com/in/manishpratik/" target="_blank") <i class="fa-brands fa-linkedin"></i>
+
+            .person-card.member
+                img(src="./assets/img/cofounder2-pic.jpg" alt="Picture of Gautam Menon")
+                p.name Gautam Menon
+                p.info Co-founder
+                .social 
+                    a.twitter.font-icon(href="https://twitter.com/manishpratik" target="_blank") <i class="fa-brands fa-square-twitter"></i>
+                    a.facebook.font-icon(href="https://www.facebook.com/LetzRent.official/" target="_blank") <i class="fa-brands fa-square-facebook"></i>
+                    a.linkedin.font-icon(href="https://www.linkedin.com/in/gautam-menon-040379208" target="_blank") <i class="fa-brands fa-linkedin"></i>
+
+        .sub-section.funds
+            p How will we use funds : Sales & Marketing - 50% | Human Resource-30% | Technology -10% | OPEX-10%
+
+        .sub-section.dates
+
+            .date-card
+                p.name Start Date <i class="fa-solid fa-circle-dot"></i>
+                p.value 2022-06-26 16:38:05
+                p.info Ends in &nbsp; #[span.green 0 Days]
+
+            .date-card
+                p.name Target Raise <i class="fa-solid fa-bullseye"></i>
+                p.value ₹ 5000000
+                p.info #[span.green 0 %] &nbsp; Raised So far
+
+        .sub-section.faq 
+
+            p.h Frequently Asked Question
+
+            p.q What does your company do ?
+
+            p.a LetzRent is an online search, compare & booking platform for self-drive car rental that rewards users for renting. We aggregate rental deals from multiple service providers and present them to users with prices, reviews & facts to make an informed decision. Currently running a pilot in Bangalore by aggregating Zoomcar, Avis, Mychoize & Wowcarz.
+
+            p.q Where do you want to be in 5 years ?
+
+            p.a Uber for Self Drive Car Rental.
+
+            p.q Why did you choose this idea, what's your biggest Obstacle ?
+            
+            p.a Customers want low Prices: And to get low prices 85% of the consumers check at least 2 data points (Source: BCG Consumer Trends). In various sectors information-centred buying has been made more efficient by companies like MMT for Travel, Policy bazaar for Insurance, Myntra or Shopperstop for Lifestyle products. However, for rental products, there is no one & to fill this need and make the process efficient we launched Letzrent, hoping to have a first-mover advantage and dominate the market in ten years.
 
