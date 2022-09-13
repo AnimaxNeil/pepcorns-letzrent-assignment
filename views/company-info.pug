@@ -22,8 +22,27 @@ section.company-info
             p.info Online search, compare & booking platform for self-drive cars, charter flights, living space & more that rewards users
 
         .actions
-            button.button-no(type="button") <i class="fa-solid fa-share"></i> Share 
-            button.button-no(type="button") <i class="fa-solid fa-user-plus"></i> Follow
+            button.button-no(type="button")#company-info-follow-btn <i class="fa-solid fa-user-plus"></i> Follow
+            button.button-no(type="button")#company-info-share-btn <i class="fa-solid fa-share"></i> Share 
+
+
+        #company-info-share-window.hide-content
+
+            .share-menu
+
+                .top 
+                    p.name Share
+                    button(type="button")#company-info-share-close-btn Close
+
+                .social
+                    button(type="button").button-no.youtube <i class="fa-brands fa-youtube"></i>
+                    button(type="button").button-no.twitter <i class="fa-brands fa-square-twitter"></i>
+                    button(type="button").button-no.facebook <i class="fa-brands fa-square-facebook"></i>
+                    button(type="button").button-no.instagram <i class="fa-brands fa-square-instagram"></i>
+                
+                button(type="button")#company-info-share-url-copy Copy URL
+
+
 
     .tags 
         span GEN Z FOUNDER

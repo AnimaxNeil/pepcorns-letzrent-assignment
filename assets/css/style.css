@@ -77,6 +77,11 @@ button {
     box-shadow: 1px 1px 2px black;
 }
 
+button:hover {
+    transform: translate(0, -1px);
+    box-shadow: 1px 2px 2px black;
+}
+
 .button-no {
     min-width: auto;
     padding: 0;
@@ -86,6 +91,15 @@ button {
     background: none;
     border: none;
     outline: none;
+}
+
+.button-no:hover {
+    transform: inherit;
+    box-shadow: inherit;
+}
+
+.hide-content {
+    display: none !important;
 }
 
 /* #endregion */
@@ -191,6 +205,10 @@ header .user-profile img {
     display: inline-block;
 }
 
+.company-info .actions button:hover {
+    color: hsl(348, 100%, 66%);
+}
+
 .company-info .tags {
     font-weight: 600;
     font-size: 0.8rem;
@@ -207,6 +225,83 @@ header .user-profile img {
 
 .company-info .tags :first-child {
     background-color: hsl(348, 100%, 94%);
+}
+
+#company-info-share-window {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: hsl(0, 0%, 0%, 0.2);
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#company-info-share-window .share-menu {
+    background-color: white;
+    margin: 30px 0;
+    border-radius: 6px;
+    box-shadow: 1px 1px 4px hsla(0, 0%, 0%, 0.2), -1px -1px 4px hsla(0, 0%, 0%, 0.2);
+    width: 90%;
+    max-width: 400px;
+    user-select: none;
+}
+
+#company-info-share-window .share-menu .top {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5%;
+    gap: 10px;
+}
+
+#company-info-share-window .share-menu .name {
+    font-size: 1.8rem;
+    font-weight: 900;
+}
+
+#company-info-share-window .share-menu .social {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#company-info-share-window .share-menu .social button {
+    margin: 5px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    box-shadow: 1px 1px 4px hsla(0, 0%, 0%, 0.2), -1px -1px 4px hsla(0, 0%, 0%, 0.2);
+}
+
+#company-info-share-window .share-menu .social button i {
+    font-size: 2rem;
+    color: hsl(255, 100%, 60%);
+}
+
+#company-info-share-window .share-menu .social button:hover {
+    transform: translate(-0, -1);
+    box-shadow: 1px 1px 8px hsla(0, 0%, 0%, 0.2), -1px -1px 8px hsla(0, 0%, 0%, 0.2);
+}
+
+#company-info-share-url-copy {
+    display: block;
+    width: 90%;
+    margin: 20px auto 40px auto;
+    font-weight: 600;
+    text-shadow: none;
+    background: none;
+    color: hsl(255, 100%, 60%);
+    border-color: hsl(255, 100%, 60%);
+    box-shadow: none;
+}
+
+#company-info-share-url-copy:hover {
+    box-shadow: 1px 1px 1px black;
 }
 
 /* #endregion */
@@ -350,10 +445,6 @@ header .user-profile img {
 
 /* #region- tabs-slection */
 
-.tab-content .tab-content-unselected {
-    display: none;
-}
-
 .tabs-selection {
     margin: 20px inherit;
 }
@@ -373,6 +464,11 @@ header .user-profile img {
 .tabs-selection .tab-unselected {
     color: hsl(255, 100%, 60%);
     background-color: white;
+}
+
+.tabs-selection button:hover {
+    transform: scale(1.1);
+    box-shadow: inherit;
 }
 
 .tab-content button {
@@ -440,6 +536,10 @@ header .user-profile img {
 
 #tab-pitch-content .r3 .info {
     font-size: 1.8rem;
+    font-weight: 600;
+}
+
+#tab-pitch-content .r14 ul a {
     font-weight: 600;
 }
 
@@ -572,6 +672,7 @@ header .user-profile img {
         display: flex;
         flex-direction: row-reverse;
         justify-content: space-around;
+        align-items: flex-start;
     }
 
     .main-flex-item-others {
@@ -584,6 +685,7 @@ header .user-profile img {
         width: fit-content;
         flex-grow: 1;
         flex-shrink: 2;
+        margin-right: 2%;
     }
 
 }

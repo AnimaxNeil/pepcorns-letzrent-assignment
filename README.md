@@ -1,6 +1,7 @@
 # Pepcorns - Letzrent  
-*version* : **0.1**  
-*update date* : 12 September 2022  
+*version* : **0.2**  
+*update date* : 14 September 2022  
+*description*: Prpcorns internship assignment  
   
 *developer* : **AnimaxNeil**  
 *url* : https://www.cc.com  

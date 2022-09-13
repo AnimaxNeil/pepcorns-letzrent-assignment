@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Pepcorns | Letzrent</title><link rel="icon" type="image/png" href="./assets/img/company-icon.png">
     <link rel="stylesheet" href="./assets/css/style.css">
     <script src="https://kit.fontawesome.com/1fc226965f.js" crossorigin="anonymous"></script>
   </head>
@@ -13,10 +13,10 @@
         <div class="left">
           <button type="button">Dashboard</button>
           <button type="button">Login</button>
-          <button type="button">Return Home</button>
+          <button type="button" onclick="window.open('https://pepcorns.com', '_blank');">Company Site</button>
         </div>
         <div class="right"><span>Profile</span>
-          <button class="user-profile button-no" type="button"><img src="./assets/img/user-profile-pic-holder.svg" alt="Profile"></button>
+          <button class="user-profile button-no" type="button" onclick="window.open('https://www.animaxneil.com', '_blank');"><img src="./assets/img/user-profile-pic-holder.svg" alt="Profile"></button>
         </div>
       </div>
     </header>
@@ -31,8 +31,23 @@
             <p class="info">Online search, compare & booking platform for self-drive cars, charter flights, living space & more that rewards users</p>
           </div>
           <div class="actions">
-            <button class="button-no" type="button"><i class="fa-solid fa-share"></i> Share </button>
-            <button class="button-no" type="button"><i class="fa-solid fa-user-plus"></i> Follow</button>
+            <button class="button-no" type="button" id="company-info-follow-btn"><i class="fa-solid fa-user-plus"></i> Follow</button>
+            <button class="button-no" type="button" id="company-info-share-btn"><i class="fa-solid fa-share"></i> Share </button>
+          </div>
+          <div class="hide-content" id="company-info-share-window">
+            <div class="share-menu">
+              <div class="top"> 
+                <p class="name">Share</p>
+                <button type="button" id="company-info-share-close-btn">Close</button>
+              </div>
+              <div class="social">
+                <button class="button-no youtube" type="button"><i class="fa-brands fa-youtube"></i></button>
+                <button class="button-no twitter" type="button"><i class="fa-brands fa-square-twitter"></i></button>
+                <button class="button-no facebook" type="button"><i class="fa-brands fa-square-facebook"></i></button>
+                <button class="button-no instagram" type="button"><i class="fa-brands fa-square-instagram"></i></button>
+              </div>
+              <button type="button" id="company-info-share-url-copy">Copy URL</button>
+            </div>
           </div>
         </div>
         <div class="tags"> <span>GEN Z FOUNDER</span><span>MOBILITY</span><span>E-COMMERCE</span></div>
@@ -183,7 +198,7 @@
               <p class="help">Unable to view video ? <a href="https://www.youtube.com/watch?v=biGcDeB2PbQ">Click here</a></p>
               <div class="video youtube"><iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/biGcDeB2PbQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
               <div class="actions"><a href="https://www.instagram.com/letzrent.official/" target="_blank"><i class="fa-solid fa-location-dot"></i> Mumbai, Maharashtra</a><a href="https://letzrent.com" target="_blank"><i class="fa-brands fa-chrome"></i> https://letzrent.com</a>
-                <div class="social"> <a class="youtube font-icon" href="https://www.youtube.com/watch?v=biGcDeB2PbQ" target="_blank"><i class="fa-brands fa-youtube"></i></a><a class="facebook font-icon" href="https://www.facebook.com/LetzRent.official/" target="_blank"><i class="fa-brands fa-square-facebook"></i></a><a class="instagram font-icon" href="https://www.youtube.com/watch?v=biGcDeB2PbQ" target="_blank"><i class="fa-brands fa-square-instagram"></i></a></div>
+                <div class="social"> <a class="youtube" href="https://www.youtube.com/watch?v=biGcDeB2PbQ" target="_blank"><i class="fa-brands fa-youtube"></i></a><a class="facebook" href="https://www.facebook.com/LetzRent.official/" target="_blank"><i class="fa-brands fa-square-facebook"></i></a><a class="instagram" href="https://www.youtube.com/watch?v=biGcDeB2PbQ" target="_blank"><i class="fa-brands fa-square-instagram"></i></a></div>
               </div>
             </div>
           </section>
@@ -194,7 +209,7 @@
             <button class="tab-unselected" type="button" id="tab-comments">Comments</button>
           </section>
           <section class="tab-content"> 
-            <div class="tab-content-unselected" id="tab-pitch-content">
+            <div class="hide-content" id="tab-pitch-content">
               <div class="row r1">
                 <div class="flex-items">
                   <p class="name">Deck</p>
@@ -277,7 +292,7 @@
                 </ul>
               </div>
             </div>
-            <div class="tab-content-unselected" id="tab-details-content">
+            <div class="hide-content" id="tab-details-content">
               <p class="heading">Meet our strong and visionary team members</p>
               <div class="members">
                 <div class="person-card member"><img src="./assets/img/cofounder1-pic.jpg" alt="Picture of Manish Pratik">
