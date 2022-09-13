@@ -358,22 +358,21 @@ header .user-profile img {
     margin: 20px inherit;
 }
 
-.tabs-selection .tab-content-unselected {
-    background-color: white;
+.tabs-selection button {
     text-shadow: none;
     box-shadow: none;
     padding-top: 10px;
     padding-bottom: 10px;
     margin: 10px;
-    color: hsl(255, 100%, 60%);
-    border-color: hsl(255, 100%, 60%);
-    background-color: white;
     border-width: 2px;
-}
-
-.tabs-selection button {
+    border-color: hsl(255, 100%, 60%);
     color: white;
     background-color: hsl(255, 100%, 60%);
+}
+
+.tabs-selection .tab-unselected {
+    color: hsl(255, 100%, 60%);
+    background-color: white;
 }
 
 .tab-content button {
