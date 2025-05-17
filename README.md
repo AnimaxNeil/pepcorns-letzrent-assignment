@@ -30,13 +30,13 @@ An assignment project I made for Pepcorns Technologies Private Limited as part o
 
 * Live Demo
 
-    * https://animaxneil.github.io/pepcorns-letzrent-assignment
+    * <https://animaxneil.github.io/pepcorns-letzrent-assignment>
 
 ---
 
 ## Contact
 
-* Link: https://www.animaxneil.com/contact
-* Email: animaxneil@gmail.com
+* Link: <https://www.animaxneil.com/contact>
+* Email: <animaxneil@gmail.com>
 
 ---
